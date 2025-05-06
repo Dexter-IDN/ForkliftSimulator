@@ -19,7 +19,11 @@ public class Reset : MonoBehaviour {
         {
             // _tr.rotation = new Quaternion(0,90,0,0);
             // transform.position = curPos;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            ResetGame();
         }
 	}
+
+    public void ResetGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
