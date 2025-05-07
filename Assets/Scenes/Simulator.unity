@@ -96,7 +96,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: b5571e594989cc74ea8fb7c5e6df061b, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -133,6 +133,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -332,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0460017
@@ -466,6 +474,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -665,6 +677,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (130)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5440025
@@ -815,6 +831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19599915
@@ -872,6 +892,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
   m_PrefabInstance: {fileID: 43827296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &45149090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45149091}
+  - component: {fileID: 45149093}
+  - component: {fileID: 45149092}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &45149091
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45149090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 972390592}
+  - {fileID: 1156089529}
+  - {fileID: 1034270585}
+  - {fileID: 1879216171}
+  m_Father: {fileID: 1093820442}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.7402222}
+  m_AnchorMax: {x: 0.37600002, y: 1}
+  m_AnchoredPosition: {x: -1.4000244, y: 1.6804199}
+  m_SizeDelta: {x: -2.8060303, y: -3.3609009}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &45149092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45149090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.5882353}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &45149093
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45149090}
+  m_CullTransparentMesh: 1
 --- !u!1 &45244707
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,7 +1260,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1000011073349600, guid: 6705bd914fa08eb4992f4e2e178dcf28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301126077}
+    - targetCorrespondingSourceObject: {fileID: 1000011073349600, guid: 6705bd914fa08eb4992f4e2e178dcf28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301126078}
+    - targetCorrespondingSourceObject: {fileID: 1000011073349600, guid: 6705bd914fa08eb4992f4e2e178dcf28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1301126079}
   m_SourcePrefab: {fileID: 100100000, guid: 6705bd914fa08eb4992f4e2e178dcf28, type: 3}
 --- !u!1 &50452160
 GameObject:
@@ -1357,29 +1465,14 @@ GameObject:
   - component: {fileID: 54458846}
   - component: {fileID: 54458845}
   - component: {fileID: 54458844}
-  - component: {fileID: 54458843}
   - component: {fileID: 54458848}
   m_Layer: 5
-  m_Name: CanvasAreaA
+  m_Name: CanvasArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &54458843
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54458842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8683e33c63da85646b3942128ca8105c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: Area A
-  label: {fileID: 664236883}
 --- !u!114 &54458844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,7 +1531,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1451,12 +1544,13 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54458842}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: -6.61}
+  m_LocalPosition: {x: 0, y: 0, z: -6.65}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 471305567}
   - {fileID: 664236885}
+  - {fileID: 1753755202}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1884,6 +1978,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.1959994
@@ -1952,6 +2050,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2027,6 +2129,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6689987
@@ -2099,6 +2205,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (105)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2178,6 +2288,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19599894
@@ -2247,6 +2361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3049984
@@ -2315,6 +2433,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (48)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2494,6 +2616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5389996
@@ -2566,6 +2692,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2741,6 +2871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5389996
@@ -2813,6 +2947,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2891,6 +3029,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3026,6 +3168,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3202,6 +3348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200022
@@ -3322,6 +3472,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3531,6 +3685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8129996
@@ -3675,6 +3833,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3832,6 +3994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.544003
@@ -3904,6 +4070,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4154,6 +4324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7929997
@@ -4226,6 +4400,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4482,6 +4660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5389993
@@ -4559,6 +4741,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4800,6 +4986,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.668999
@@ -4877,6 +5067,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5009,6 +5203,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5144,6 +5342,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5486,6 +5688,129 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208009569}
   m_Mesh: {fileID: 4300000, guid: 5661de86a21f8ef4b8fa880ef2e7b46c, type: 3}
+--- !u!1 &208063306
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 208063307}
+  - component: {fileID: 208063310}
+  - component: {fileID: 208063309}
+  - component: {fileID: 208063308}
+  - component: {fileID: 208063311}
+  m_Layer: 0
+  m_Name: CountingCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &208063307
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208063306}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 5.6, y: -16.384, z: -5.1}
+  m_LocalScale: {x: 61.982944, y: 22.43592, z: 46.213013}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 842192893}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &208063308
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208063306}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &208063309
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208063306}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &208063310
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208063306}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &208063311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208063306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limit: 1
+  area: B
+  itemTag: Barrel
+  areaText: {fileID: 779266352}
+  questText: {fileID: 1034270586}
 --- !u!1 &208181481
 GameObject:
   m_ObjectHideFlags: 0
@@ -5618,6 +5943,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.721001
@@ -5748,6 +6077,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6404,7 +6737,7 @@ MonoBehaviour:
   m_ShowCameraFrustum: 1
   m_IgnoreTimeScale: 0
   m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
+  m_UpdateMethod: 0
   m_BlendUpdateMethod: 1
   m_DefaultBlend:
     m_Style: 1
@@ -6642,6 +6975,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09400155
@@ -6857,6 +7194,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09400155
@@ -6929,6 +7270,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (64)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7065,6 +7410,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7614,6 +7963,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.34300044
@@ -7958,6 +8311,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (54)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8689,6 +9046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4759984
@@ -8949,6 +9310,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27999905
@@ -9021,6 +9386,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (127)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9443,6 +9812,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4109998
@@ -9564,6 +9937,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9773,6 +10150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2530003
@@ -9841,6 +10222,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10301,6 +10686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6689992
@@ -10462,6 +10851,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10673,6 +11066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4399986
@@ -10862,6 +11259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9160006
@@ -10934,6 +11335,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11223,6 +11628,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3430002
@@ -11295,6 +11704,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11546,6 +11959,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6689992
@@ -11667,6 +12084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9160004
@@ -11754,7 +12175,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 471305566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11762,7 +12183,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.5, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471305568
@@ -11814,6 +12235,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (66)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11887,6 +12312,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (98)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12432,6 +12861,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2749999
@@ -12500,6 +12933,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12822,6 +13259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03229547
@@ -12953,6 +13394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2900012
@@ -13026,6 +13471,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.065998115
@@ -13094,6 +13543,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (120)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13167,6 +13620,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (129)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13265,6 +13722,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13519,6 +13980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.721001
@@ -13748,6 +14213,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14204,6 +14673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6150002
@@ -14488,6 +14961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27999905
@@ -14685,6 +15162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2530005
@@ -14812,6 +15293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4659996
@@ -14881,6 +15366,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9799995
@@ -14949,6 +15438,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15129,6 +15622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8129997
@@ -15206,6 +15703,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (92)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15380,6 +15881,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15584,6 +16089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4580007
@@ -15652,6 +16161,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15888,6 +16401,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16225,6 +16742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9799997
@@ -16435,6 +16956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.065997966
@@ -16604,6 +17129,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17092,6 +17621,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17695,6 +18228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9160006
@@ -17767,6 +18304,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18033,6 +18574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.261002
@@ -18260,6 +18805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.046002
@@ -18485,6 +19034,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18731,6 +19284,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19155,6 +19712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0759983
@@ -19421,6 +19982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0759984
@@ -19613,6 +20178,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20216,6 +20785,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09400131
@@ -20412,6 +20985,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20706,6 +21283,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4359989
@@ -20894,6 +21475,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0729979
@@ -21011,29 +21596,14 @@ GameObject:
   - component: {fileID: 842192892}
   - component: {fileID: 842192891}
   - component: {fileID: 842192890}
-  - component: {fileID: 842192889}
   - component: {fileID: 842192894}
   m_Layer: 5
-  m_Name: CanvasAreaB
+  m_Name: CanvasArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &842192889
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 842192888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8683e33c63da85646b3942128ca8105c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: Area B
-  label: {fileID: 779266352}
 --- !u!114 &842192890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21111,6 +21681,7 @@ RectTransform:
   m_Children:
   - {fileID: 257589911}
   - {fileID: 779266354}
+  - {fileID: 208063307}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -21252,6 +21823,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21611,6 +22186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1870002
@@ -21789,6 +22368,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22566,6 +23149,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.290001
@@ -22691,6 +23278,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22871,6 +23462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8449993
@@ -23001,6 +23596,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23253,6 +23852,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.26399994
@@ -23383,6 +23986,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (124)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23602,6 +24209,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -23863,6 +24474,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24164,6 +24779,140 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 457174, guid: b2eebec45f249ba4e959a5e0cf96b1de, type: 3}
   m_PrefabInstance: {fileID: 971123788}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &972390591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972390592}
+  - component: {fileID: 972390594}
+  - component: {fileID: 972390593}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &972390592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972390591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 45149091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 65.741486}
+  m_SizeDelta: {x: -19.7224, y: -146.8227}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &972390593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972390591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Quest:'
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &972390594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972390591}
+  m_CullTransparentMesh: 1
 --- !u!1001 &975876730
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24357,6 +25106,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (109)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -24765,6 +25518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1869999
@@ -24891,6 +25648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4160008
@@ -24964,6 +25725,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25081,6 +25846,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (115)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25318,6 +26087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200025
@@ -25439,6 +26212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.06599785
@@ -25555,6 +26332,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25740,6 +26521,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.094001725
@@ -25817,6 +26602,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26007,6 +26796,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010654416078, guid: f3a2bdf629453a94da066a94851ba2ba, type: 3}
   m_PrefabInstance: {fileID: 1945064345}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1034270584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034270585}
+  - component: {fileID: 1034270587}
+  - component: {fileID: 1034270586}
+  m_Layer: 5
+  m_Name: Quest2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1034270585
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034270584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 45149091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0042114, y: -16.73799}
+  m_SizeDelta: {x: 458.76, y: 42.701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1034270586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034270584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pindahkan item ke Area * (0/0)
+--- !u!222 &1034270587
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034270584}
+  m_CullTransparentMesh: 1
 --- !u!1 &1034568077 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
@@ -26082,6 +26950,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0959989
@@ -26150,6 +27022,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -26584,6 +27460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.290001
@@ -26871,6 +27751,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27198,6 +28082,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27649,6 +28537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.03229547
@@ -27828,6 +28720,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.81299984
@@ -27948,6 +28844,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28081,6 +28981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.094001785
@@ -28190,6 +29094,108 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.0404044, z: -0.00029459983}
+--- !u!1 &1093820438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1093820442}
+  - component: {fileID: 1093820441}
+  - component: {fileID: 1093820440}
+  - component: {fileID: 1093820439}
+  m_Layer: 5
+  m_Name: CanvasQuest
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1093820439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093820438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1093820440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093820438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1093820441
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093820438}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1093820442
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093820438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 45149091}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1094756383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28201,6 +29207,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28500,6 +29510,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2900012
@@ -28639,6 +29653,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28976,6 +29994,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (85)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29446,6 +30468,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.264
@@ -29619,6 +30645,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (117)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29975,6 +31005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1700025
@@ -30084,6 +31118,85 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.0404044, z: -0.00029459983}
+--- !u!1 &1156089528
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156089529}
+  - component: {fileID: 1156089531}
+  - component: {fileID: 1156089530}
+  m_Layer: 5
+  m_Name: Quest1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1156089529
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156089528}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 45149091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.0042114, y: 25.963}
+  m_SizeDelta: {x: 458.76, y: 42.701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1156089530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156089528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pindahkan item ke Area * (0/0)
+--- !u!222 &1156089531
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156089528}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1158607616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30095,6 +31208,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30515,6 +31632,129 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.0404044, z: -0.00029459983}
+--- !u!1 &1166210088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1166210089}
+  - component: {fileID: 1166210092}
+  - component: {fileID: 1166210091}
+  - component: {fileID: 1166210090}
+  - component: {fileID: 1166210093}
+  m_Layer: 0
+  m_Name: CountingCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1166210089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166210088}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2.100009, y: -17.014, z: -8.195992}
+  m_LocalScale: {x: 61.982944, y: 21.170002, z: 46.213017}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1883085866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1166210090
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166210088}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1166210091
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166210088}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1166210092
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166210088}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1166210093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166210088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limit: 1
+  area: C
+  itemTag: Barrel
+  areaText: {fileID: 414656465}
+  questText: {fileID: 1879216172}
 --- !u!1 &1171003611 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
@@ -30579,6 +31819,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -30759,6 +32003,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.2459981
@@ -30880,6 +32128,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31011,6 +32263,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (122)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31310,6 +32566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0959986
@@ -31538,6 +32798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.614998
@@ -31612,6 +32876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4659996
@@ -31680,6 +32948,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (131)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -31878,6 +33150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.5440025
@@ -32066,6 +33342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200022
@@ -32206,6 +33486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8449992
@@ -32327,6 +33611,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32454,6 +33742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.3430002
@@ -32574,6 +33866,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32748,6 +34044,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33128,6 +34428,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.304998
@@ -33297,6 +34601,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33524,6 +34832,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (62)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33832,6 +35144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.335999
@@ -33900,6 +35216,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34070,6 +35390,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (53)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34364,6 +35688,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (55)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -34833,6 +36161,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4399986
@@ -35012,6 +36344,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35239,6 +36575,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.81299984
@@ -35348,6 +36688,47 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.0404044, z: -0.00029459983}
+--- !u!1 &1301126072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011073349600, guid: 6705bd914fa08eb4992f4e2e178dcf28, type: 3}
+  m_PrefabInstance: {fileID: 48959742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301126077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301126072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: accd5580e71dcaf43a90ece5bf2972f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1301126078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301126072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81dbcf422681c1c4ca758d2545310522, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1301126079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301126072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30a2cb8b05a134c419a39b01348b1b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1302282395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35359,6 +36740,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (87)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35562,6 +36947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6149983
@@ -35689,6 +37078,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.668999
@@ -35810,6 +37203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.032295246
@@ -35926,6 +37323,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (134)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36056,6 +37457,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36350,6 +37755,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (49)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36763,6 +38172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200025
@@ -36841,6 +38254,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0729982
@@ -36909,6 +38326,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37026,6 +38447,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (118)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -37321,6 +38746,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8129996
@@ -37547,6 +38976,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38368,6 +39801,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.170002
@@ -39187,6 +40624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200025
@@ -39264,6 +40705,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (90)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39639,6 +41084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2799988
@@ -39816,6 +41265,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40039,6 +41492,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40349,6 +41806,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -40706,6 +42167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.668999
@@ -40778,6 +42243,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41248,6 +42717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09400155
@@ -41320,6 +42793,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (133)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41560,6 +43037,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41812,6 +43293,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.420002
@@ -41933,6 +43418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.046002
@@ -42053,6 +43542,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42423,6 +43916,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.544003
@@ -42543,6 +44040,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -42779,6 +44280,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43188,6 +44693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.094001666
@@ -43309,6 +44818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.8129998
@@ -43381,6 +44894,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43498,6 +45015,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -43783,6 +45304,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (128)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.170002
@@ -43903,6 +45428,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44190,6 +45719,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -44647,6 +46180,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1700025
@@ -44767,6 +46304,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -45730,6 +47271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0509987
@@ -46091,6 +47636,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1870004
@@ -46317,6 +47866,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0460017
@@ -46442,6 +47995,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -46900,6 +48457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1959992
@@ -47070,6 +48631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.4399989
@@ -47187,6 +48752,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.261002
@@ -47255,6 +48824,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -47751,6 +49324,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (56)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48666,6 +50243,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.3890004
@@ -48902,6 +50483,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.0509988
@@ -49018,6 +50603,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49150,6 +50739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4200025
@@ -49270,6 +50863,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (79)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49454,6 +51051,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9160004
@@ -49563,6 +51164,147 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.0404044, z: -0.00029459983}
+--- !u!1 &1753755201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753755202}
+  - component: {fileID: 1753755205}
+  - component: {fileID: 1753755204}
+  - component: {fileID: 1753755206}
+  - component: {fileID: 1753755203}
+  - component: {fileID: 1753755207}
+  m_Layer: 0
+  m_Name: CountingCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1753755202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 2, y: -14.42, z: -2.6}
+  m_LocalScale: {x: 58.201984, y: 26.359999, z: 46.213013}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 54458847}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1753755203
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1753755204
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1753755205
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1753755206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limit: 4
+  area: A
+  itemTag: 
+  areaText: {fileID: 0}
+  questText: {fileID: 0}
+--- !u!114 &1753755207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753755201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  limit: 1
+  area: A
+  itemTag: Cardboard
+  areaText: {fileID: 664236883}
+  questText: {fileID: 1156089530}
 --- !u!1001 &1755783917
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49735,6 +51477,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49918,6 +51664,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50232,6 +51982,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.6149979
@@ -50415,6 +52169,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (99)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50652,6 +52410,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2610016
@@ -50768,6 +52530,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (126)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -50899,6 +52665,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51079,6 +52849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.27999878
@@ -51199,6 +52973,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (84)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51617,6 +53395,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.48
@@ -51733,6 +53515,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51922,6 +53708,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2610016
@@ -52091,6 +53881,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (101)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -52696,6 +54490,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4160008
@@ -52812,6 +54610,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53053,6 +54855,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (132)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53302,6 +55108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19599894
@@ -53419,6 +55229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7929997
@@ -53528,6 +55342,85 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.31558487, y: 0.3083824, z: 0.23376189}
   m_Center: {x: -0.0004268067, y: 0.04040446, z: -0.00029269248}
+--- !u!1 &1879216170
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1879216171}
+  - component: {fileID: 1879216173}
+  - component: {fileID: 1879216172}
+  m_Layer: 5
+  m_Name: Quest3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1879216171
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879216170}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 45149091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0042115, y: -59.439}
+  m_SizeDelta: {x: 458.76, y: 42.701}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1879216172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879216170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Pindahkan item ke Area * (0/0)
+--- !u!222 &1879216173
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879216170}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1879722204
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53655,29 +55548,14 @@ GameObject:
   - component: {fileID: 1883085865}
   - component: {fileID: 1883085864}
   - component: {fileID: 1883085863}
-  - component: {fileID: 1883085862}
   - component: {fileID: 1883085867}
   m_Layer: 5
-  m_Name: CanvasAreaC
+  m_Name: CanvasArea
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1883085862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883085861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8683e33c63da85646b3942128ca8105c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  value: Area C
-  label: {fileID: 414656465}
 --- !u!114 &1883085863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53755,6 +55633,7 @@ RectTransform:
   m_Children:
   - {fileID: 1698507430}
   - {fileID: 414656467}
+  - {fileID: 1166210089}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -53786,6 +55665,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -53959,6 +55842,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54197,6 +56084,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4109995
@@ -54313,6 +56204,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54549,6 +56444,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (50)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -54892,6 +56791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.7929997
@@ -54964,6 +56867,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55264,6 +57171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.094001815
@@ -55384,6 +57295,10 @@ PrefabInstance:
     - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_Name
       value: Barrel_03_Blue (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
       objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -55511,6 +57426,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56305,6 +58224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.4359988
@@ -56531,6 +58454,10 @@ PrefabInstance:
     - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_Name
       value: Amp_Rack_01 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
       objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57282,6 +59209,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.0459998
@@ -57566,6 +59497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.261002
@@ -57683,6 +59618,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Amp_Rack_01 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 169152, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
+      propertyPath: m_TagString
+      value: AMPRack
+      objectReference: {fileID: 0}
     - target: {fileID: 493102, guid: 705d933b89ad2d94a8a505a85bc0a4fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.4109993
@@ -57799,6 +59738,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (112)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58260,6 +60203,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Barrel_03_Blue (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 112082, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
+      propertyPath: m_TagString
+      value: Barrel
+      objectReference: {fileID: 0}
     - target: {fileID: 428934, guid: 53dd11272dbdda346a1936ca914cdac9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.1959991
@@ -58376,6 +60323,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (46)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -58684,6 +60635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.81299937
@@ -58863,6 +60818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.032295708
@@ -58979,6 +60938,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (51)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59149,6 +61112,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59511,6 +61478,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9799998
@@ -59689,6 +61660,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (63)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -59916,6 +61891,10 @@ PrefabInstance:
     - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_Name
       value: Box_02_Red (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
       objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60149,6 +62128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1870002
@@ -60269,6 +62252,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (125)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60443,6 +62430,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60846,6 +62837,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.4659996
@@ -61029,6 +63024,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -61551,6 +63550,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giftbox_01_Purple (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
+      objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.34300038
@@ -61740,6 +63743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.2640002
@@ -61919,6 +63926,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Box_02_Red (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 163552, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
+      propertyPath: m_TagString
+      value: Cardboard
+      objectReference: {fileID: 0}
     - target: {fileID: 442080, guid: 5dd25028b7dd39f46bf998a8c618ea6e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.032295708
@@ -62035,6 +64046,10 @@ PrefabInstance:
     - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_Name
       value: Cabinet_01 (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
       objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62259,6 +64274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet_01 (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 134534, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
+      propertyPath: m_TagString
+      value: Cabinet
+      objectReference: {fileID: 0}
     - target: {fileID: 430882, guid: e32f6a0e129409b49ab1ada5d1090113, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.2610016
@@ -62442,6 +64461,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62669,6 +64692,10 @@ PrefabInstance:
     - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_Name
       value: Giftbox_01_Purple (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 162164, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
+      propertyPath: m_TagString
+      value: Giftbox
       objectReference: {fileID: 0}
     - target: {fileID: 401422, guid: 429ebdcdf0ae3ce4c9f3279a683e72ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -64028,10 +66055,10 @@ SceneRoots:
   - {fileID: 1885389960}
   - {fileID: 2052518777}
   - {fileID: 4000011845821354}
+  - {fileID: 4000011903843554}
   - {fileID: 4000011975093826}
   - {fileID: 4000012317228354}
   - {fileID: 4000012540782930}
-  - {fileID: 4000011903843554}
   - {fileID: 513487066}
   - {fileID: 1164533489}
   - {fileID: 678041498}
@@ -64057,3 +66084,4 @@ SceneRoots:
   - {fileID: 54458847}
   - {fileID: 842192893}
   - {fileID: 1883085866}
+  - {fileID: 1093820442}
