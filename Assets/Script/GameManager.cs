@@ -16,14 +16,14 @@ public class GameManager : MonoBehaviour
 
     void LateUpdate()
     {
-        if(count >= limit) {
-            Debug.Log("Game Over");
+        // Debug.Log("count : " + count);
+        // Debug.Log("limit : " + limit);
 
-            Time.timeScale = 0;
-          
+        if(count >= limit) {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
             SceneManager.LoadScene("GameFinish");
         }
     }
-
-
 }

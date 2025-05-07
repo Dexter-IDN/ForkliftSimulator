@@ -40,7 +40,7 @@ public class AreaAQuestManager : MonoBehaviour
     }
 
     void UpdateCountInGameManager() {
-        GameManager.count += count;
+        GameManager.count++;
     }
 
     void UpdateLimitInGameManager() {
