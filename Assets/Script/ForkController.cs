@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class ForkController : MonoBehaviour {
+    // AudioManager audioManager;
 
     public Transform fork; 
     public Transform mast;
@@ -12,6 +13,10 @@ public class ForkController : MonoBehaviour {
     public Vector3 minYmast; //The minimum height of the mast
 
     private bool mastMoveTrue = false; //Activate or deactivate the movement of the mast
+
+    // private void Awake() {
+    //     audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    // }
 
     // Update is called once per frame
     void FixedUpdate () {
@@ -36,9 +41,14 @@ public class ForkController : MonoBehaviour {
         {
            //fork.Translate(Vector3.up * speedTranslate * Time.deltaTime);
             fork.transform.localPosition = Vector3.MoveTowards(fork.transform.localPosition, maxY, speedTranslate * Time.deltaTime);
+            
+            // audioManager.playSFX(audioManager.raiseDownFork);
+
             if(mastMoveTrue)
             {
                 mast.transform.localPosition = Vector3.MoveTowards(mast.transform.localPosition, maxYmast, speedTranslate * Time.deltaTime);
+
+                
             }
           
         }
@@ -46,10 +56,13 @@ public class ForkController : MonoBehaviour {
         {
             fork.transform.localPosition = Vector3.MoveTowards(fork.transform.localPosition, minY, speedTranslate * Time.deltaTime);
 
+            // audioManager.playSFX(audioManager.raiseDownFork);
+
             if (mastMoveTrue)
             {
                 mast.transform.localPosition = Vector3.MoveTowards(mast.transform.localPosition, minYmast, speedTranslate * Time.deltaTime);
 
+                
             }
 
         }

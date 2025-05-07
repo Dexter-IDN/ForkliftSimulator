@@ -10,6 +10,7 @@ TagManager:
   - AMPRack
   - Barrel
   - Cabinet
+  - Audio
   layers:
   - Default
   - TransparentFX
