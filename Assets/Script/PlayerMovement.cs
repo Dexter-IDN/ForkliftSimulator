@@ -47,6 +47,5 @@ public class PlayerMovement : MonoBehaviour
         rotation.y = Mathf.Clamp(rotation.y, -10, 10);
 
         transform.localRotation = Quaternion.Euler(rotation.y, rotation.x, 0);
-
     }
 }

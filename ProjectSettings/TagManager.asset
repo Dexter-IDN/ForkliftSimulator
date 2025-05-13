@@ -11,15 +11,16 @@ TagManager:
   - Barrel
   - Cabinet
   - Audio
+  - StartButton
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - SimulatorButton
   - Water
   - UI
-  - 
-  - 
+  - Wall
+  - Obstacle
   - 
   - 
   - 

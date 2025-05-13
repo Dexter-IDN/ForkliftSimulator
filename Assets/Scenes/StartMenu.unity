@@ -288,7 +288,9 @@ MonoBehaviour:
   musicSource: {fileID: 1340224756}
   sfxSource: {fileID: 686060092}
   backgroundMenu: {fileID: 8300000, guid: 15638e75b98a0924da55c51c40f8bbe2, type: 3}
+  secondaryMenu: {fileID: 0}
   backgroundGame: {fileID: 0}
+  gameFinish: {fileID: 0}
   engineStart: {fileID: 0}
   beepingLoop: {fileID: 0}
   raiseDownFork: {fileID: 0}
@@ -777,7 +779,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

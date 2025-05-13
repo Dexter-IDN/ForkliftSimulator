@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
     [Header("Audio Source")]
     [SerializeField] AudioSource musicSource;
     [SerializeField] AudioSource sfxSource;
+    [SerializeField] AudioSource liftSource;
+    [SerializeField] AudioSource engineSource; // Dedicated source for lift sound
 
     [Header("Audio Clip")]
     public AudioClip backgroundMenu;
@@ -20,7 +22,7 @@ public class AudioManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+    
     }
 
     // Update is called once per frame
@@ -51,5 +53,43 @@ public class AudioManager : MonoBehaviour
 
     public void playSFX(AudioClip clip) {
         sfxSource.PlayOneShot(clip);
+    }
+
+    // Method to control the lift sound (start/stop)
+    public void PlayLiftSound(bool play)
+    {
+        if (play)
+        {
+            if (!liftSource.isPlaying)
+            {
+                liftSource.clip = raiseDownFork;
+                liftSource.Play();
+            }
+        }
+        else
+        {
+            if (liftSource.isPlaying)
+            {
+                liftSource.Stop();
+            }
+        }
+    }
+
+    public void PlayBeepSound(bool play) {
+        if (play)
+        {
+            if (!engineSource.isPlaying)
+            {
+                engineSource.clip = beepingLoop;
+                engineSource.Play();
+            }
+        }
+        else
+        {
+            if (engineSource.isPlaying)
+            {
+                engineSource.Stop();
+            }
+        }
     }
 }
