@@ -116,8 +116,8 @@ public class ForkliftController : MonoBehaviour
     private void GearChanging()
     {
         float speedRatio = Mathf.Abs(CurrentSpeed / MaxSpeed);
-        float upGearLimit = (1 / (float)gearCount) * (currentGear + 1);
-        float downGearLimit = (1 / (float)gearCount) * currentGear;
+        float upGearLimit = 1 / (float)gearCount * (currentGear + 1);
+        float downGearLimit = 1 / (float)gearCount * currentGear;
 
         // Turun gigi jika kecepatan di bawah batas bawah
         if (currentGear > 0 && speedRatio < downGearLimit)
@@ -369,8 +369,12 @@ public class ForkliftController : MonoBehaviour
     /// </summary>
     private void ApplyDownForce()
     {
-        wheelColliders[0].attachedRigidbody.AddForce(
-            -transform.up * downforce * wheelColliders[0].attachedRigidbody.velocity.magnitude
+         if (vehicleRigidbody == null) return;
+
+        // Tambahkan gaya ke bawah ke seluruh body kendaraan
+        vehicleRigidbody.AddForce(
+            -transform.up * downforce * vehicleRigidbody.velocity.magnitude,
+            ForceMode.Force
         );
     }
 

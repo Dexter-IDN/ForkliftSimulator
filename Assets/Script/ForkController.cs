@@ -1,93 +1,86 @@
 ﻿﻿using UnityEngine;
-using System.Collections;
 
-public class ForkController : MonoBehaviour {
-    AudioManager audioManager; // Referensi ke AudioManager untuk mengontrol suara
+public class ForkController : MonoBehaviour
+{
+    [Header("References")]
+    [SerializeField] private Transform fork;
+    [SerializeField] private Transform mast;
+    private AudioManager audioManager;
 
-    public Transform fork; // Transform dari garpu (platform) forklift
-    public Transform mast; // Transform dari tiang (mast) forklift
-    public float speedTranslate; // Kecepatan pergerakan platform
-    public Vector3 maxY; // Posisi Y maksimum platform
-    public Vector3 minY; // Posisi Y minimum platform
-    public Vector3 maxYmast; // Posisi Y maksimum tiang
-    public Vector3 minYmast; // Posisi Y minimum tiang
+    [Header("Settings")]
+    [SerializeField] private float speedTranslate = 1f;
+    [SerializeField] private Vector3 maxY;
+    [SerializeField] private Vector3 minY;
+    [SerializeField] private Vector3 maxYmast;
+    [SerializeField] private Vector3 minYmast;
 
-    private bool mastMoveTrue = false; // Flag untuk mengaktifkan gerakan tiang
-    private bool isPlayingLiftSound = false; // Flag untuk mengecek apakah suara lift sedang diputar
+    private bool isPlayingLiftSound = false;
 
-    private void Awake() {
-        // Mencari dan menyimpan referensi ke AudioManager
-        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    private void Start()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio")?.GetComponent<AudioManager>();
     }
 
-    void Start() {
-        // Memainkan suara mesin saat forklift mulai
-        audioManager.playSFX(audioManager.engineStart);
+    private void FixedUpdate()
+    {
+        HandleInput();
     }
 
-    // Update dipanggil setiap frame
-    void FixedUpdate () {
-        // Mengecek posisi platform untuk menentukan apakah tiang harus bergerak
-        if(fork.transform.localPosition.y >= maxYmast.y && fork.transform.localPosition.y < maxY.y)
+    private void HandleInput()
+    {
+        bool moveUp = Input.GetKey(KeyCode.J);
+        bool moveDown = Input.GetKey(KeyCode.K);
+
+        if (moveUp)
         {
-            mastMoveTrue = true; // Aktifkan gerakan tiang jika platform di atas batas tertentu
+            MoveFork(maxY);
+            MoveMastIfNeeded(maxYmast);
+            PlayLiftSound(true);
+        }
+        else if (moveDown)
+        {
+            MoveFork(minY);
+            MoveMastIfNeeded(minYmast);
+            PlayLiftSound(true);
         }
         else
         {
-            mastMoveTrue = false; // Nonaktifkan gerakan tiang
+            PlayLiftSound(false);
         }
+    }
 
-        if (fork.transform.localPosition.y <= maxYmast.y)
+    private void MoveFork(Vector3 target)
+    {
+        fork.localPosition = Vector3.MoveTowards(fork.localPosition, target, speedTranslate * Time.deltaTime);
+    }
+
+    private void MoveMastIfNeeded(Vector3 target)
+    {
+        if (ShouldMoveMast())
         {
-            mastMoveTrue = false; // Pastikan tiang tidak bergerak jika platform di bawah batas
+            mast.localPosition = Vector3.MoveTowards(mast.localPosition, target, speedTranslate * Time.deltaTime);
         }
-      
-        // Gerakan platform naik saat tombol J ditekan
-        if (Input.GetKey(KeyCode.J))
-        {
-            // Menggerakkan platform ke posisi maksimum
-            fork.transform.localPosition = Vector3.MoveTowards(fork.transform.localPosition, maxY, speedTranslate * Time.deltaTime);
-            
-            // Memainkan suara lift jika belum diputar
-            if (!isPlayingLiftSound)
-            {
-                audioManager.PlayLiftSound(true);
-                isPlayingLiftSound = true;
-            }
+    }
 
-            // Menggerakkan tiang jika flag aktif
-            if(mastMoveTrue)
-            {
-                mast.transform.localPosition = Vector3.MoveTowards(mast.transform.localPosition, maxYmast, speedTranslate * Time.deltaTime);
-            }
+    private bool ShouldMoveMast()
+    {
+        float forkY = fork.localPosition.y;
+        return forkY > maxYmast.y && forkY < maxY.y;
+    }
+
+    private void PlayLiftSound(bool play)
+    {
+        if (audioManager == null) return;
+
+        if (play && !isPlayingLiftSound)
+        {
+            audioManager.PlayLiftSound(true);
+            isPlayingLiftSound = true;
         }
-        // Gerakan platform turun saat tombol K ditekan
-        else if (Input.GetKey(KeyCode.K))
+        else if (!play && isPlayingLiftSound)
         {
-            // Menggerakkan platform ke posisi minimum
-            fork.transform.localPosition = Vector3.MoveTowards(fork.transform.localPosition, minY, speedTranslate * Time.deltaTime);
-
-            // Memainkan suara lift jika belum diputar
-            if (!isPlayingLiftSound)
-            {
-                audioManager.PlayLiftSound(true);
-                isPlayingLiftSound = true;
-            }
-
-            // Menggerakkan tiang jika flag aktif
-            if (mastMoveTrue)
-            {
-                mast.transform.localPosition = Vector3.MoveTowards(mast.transform.localPosition, minYmast, speedTranslate * Time.deltaTime);
-            }
-        }
-        else
-        {
-            // Menghentikan suara lift jika tidak ada tombol yang ditekan
-            if (isPlayingLiftSound)
-            {
-                audioManager.PlayLiftSound(false);
-                isPlayingLiftSound = false;
-            }
+            audioManager.PlayLiftSound(false);
+            isPlayingLiftSound = false;
         }
     }
 }

@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour
 
     void LateUpdate()
     {
-        // Debug.Log("count : " + count);
-        // Debug.Log("limit : " + limit);
+        // Debug.Log("count : " + COUNT);
+        // Debug.Log("limit : " + LIMIT);
 
         if(COUNT >= LIMIT) {
             Cursor.lockState = CursorLockMode.None;
