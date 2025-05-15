@@ -4,7 +4,7 @@ using System.Xml.Serialization;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AreaAQuestManager : MonoBehaviour
+public class AreaQuestManager : MonoBehaviour
 {
     private int count;
     
@@ -40,11 +40,11 @@ public class AreaAQuestManager : MonoBehaviour
     }
 
     void UpdateCountInGameManager() {
-        GameManager.count++;
+        GameManager.COUNT++;
     }
 
     void UpdateLimitInGameManager() {
-        GameManager.limit += limit;
+        GameManager.LIMIT += limit;
     }
 
     void UpdateAreaName() {

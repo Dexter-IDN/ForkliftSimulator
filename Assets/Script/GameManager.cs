@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static int limit;
-    public static int count;
+    public static int LIMIT;
+    public static int COUNT;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour
         // Debug.Log("count : " + count);
         // Debug.Log("limit : " + limit);
 
-        if(count >= limit) {
+        if(COUNT >= LIMIT) {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
 
