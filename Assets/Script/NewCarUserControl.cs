@@ -7,6 +7,7 @@ public class NewCarUserControl : MonoBehaviour
         AudioManager audioManager;
         private NewCarController m_Car; // the car controller we want to use
         private bool isPlayingBeepSound = false;
+        private bool isPlayingEngineForwardSound = false;
 
         private void Awake()
         {
@@ -21,8 +22,15 @@ public class NewCarUserControl : MonoBehaviour
             // pass the input to the car!
             float h = Input.GetAxis("Horizontal");
             float v = Input.GetAxis("Vertical");
-
-            if(v < 0) {
+            
+            // Deteksi input mundur langsung dari input mentah
+            // bool isReversing = Input.GetAxis("Vertical") < 0;
+            
+            // Atau alternatif: deteksi berdasarkan input dan kecepatan mobil
+            bool isReversing = (v < 0) || (v < 0.1f && m_Car.CurrentSpeed > 0.1f && Input.GetKey(KeyCode.DownArrow));
+            
+            // Kontrol suara beep saat mundur
+            if(isReversing) {
                 if(!isPlayingBeepSound) {
                     audioManager.PlayBeepSound(true);
                     isPlayingBeepSound = true;
@@ -34,12 +42,24 @@ public class NewCarUserControl : MonoBehaviour
                 }
             }
 
+            // Kontrol suara mesin saat maju
+            if(v > 0) {
+                if(!isPlayingEngineForwardSound) {
+                    audioManager.PlayEngineForward(true);
+                    isPlayingEngineForwardSound = true;
+                }
+            } else {
+                if(isPlayingEngineForwardSound) {
+                    audioManager.PlayEngineForward(false);
+                    isPlayingEngineForwardSound = false;
+                }
+            }
+
             #if !MOBILE_INPUT
-                        float handbrake = Input.GetAxis("Jump");
-                        m_Car.Move(h, v, v, handbrake);
-                        
+                float handbrake = Input.GetAxis("Jump");
+                m_Car.Move(h, v, v, handbrake);
             #else
-                        m_Car.Move(h, v, v, 0f);
+                m_Car.Move(h, v, v, 0f);
             #endif
         }
     }

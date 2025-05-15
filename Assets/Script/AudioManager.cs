@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip backgroundGame;
     public AudioClip gameFinish;
     public AudioClip engineStart;
+    public AudioClip engineForward;
     public AudioClip beepingLoop;
     public AudioClip raiseDownFork;
 
@@ -71,6 +72,24 @@ public class AudioManager : MonoBehaviour
             if (liftSource.isPlaying)
             {
                 liftSource.Stop();
+            }
+        }
+    }
+
+    public void PlayEngineForward(bool play) {
+        if (play)
+        {
+            if (!engineSource.isPlaying)
+            {
+                engineSource.clip = engineForward;
+                engineSource.Play();
+            }
+        }
+        else
+        {
+            if (engineSource.isPlaying)
+            {
+                engineSource.Stop();
             }
         }
     }
