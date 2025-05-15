@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
 
-    [RequireComponent(typeof (NewCarController))]
-public class NewCarUserControl : MonoBehaviour
+    [RequireComponent(typeof (ForkliftController))]
+public class ForkliftUserControl : MonoBehaviour
     {
         AudioManager audioManager;
-        private NewCarController m_Car; // the car controller we want to use
+        private ForkliftController m_Car; // the car controller we want to use
         private bool isPlayingBeepSound = false;
         private bool isPlayingEngineForwardSound = false;
 
@@ -13,7 +13,7 @@ public class NewCarUserControl : MonoBehaviour
         {
             audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
             // get the car controller
-            m_Car = GetComponent<NewCarController>();
+            m_Car = GetComponent<ForkliftController>();
         }
 
 
