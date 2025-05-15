@@ -11,9 +11,9 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource engineSource; // Dedicated source for lift sound
 
     [Header("Audio Clip")]
-    public AudioClip backgroundMenu;
+    public AudioClip mainMenu;
     public AudioClip secondaryMenu;
-    public AudioClip backgroundGame;
+    public AudioClip gamePlay;
     public AudioClip gameFinish;
     public AudioClip engineStart;
     public AudioClip engineForward;
@@ -32,18 +32,21 @@ public class AudioManager : MonoBehaviour
         
     }
 
-    public void PlayBackgroundMenu() {
-        musicSource.clip = backgroundMenu;
+    public void PlayMainMenu()
+    {
+        musicSource.clip = mainMenu;
         musicSource.Play();
     }
 
-    public void PlayBackgroundGame() {
-        musicSource.clip = backgroundGame;
-        musicSource.Play();
-    }
-
-    public void PlaySecondaryMenu() {
+    public void PlaySecondaryMenu()
+    {
         musicSource.clip = secondaryMenu;
+        musicSource.Play();
+    }
+
+    public void PlayGamePlay()
+    {
+        musicSource.clip = gamePlay;
         musicSource.Play();
     }
 
