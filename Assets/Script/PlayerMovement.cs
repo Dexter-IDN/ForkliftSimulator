@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -13,22 +10,22 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 rotation;
 
-    void Start() 
+    void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
-    void Update() 
+    void Update()
     {
         Movement();
         Rotation();
     }
 
-    void Movement() 
+    void Movement()
     {
         float moveX = Input.GetAxis("Horizontal");
-        float moveZ = Input.GetAxis("Vertical"); 
+        float moveZ = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveX, -1, moveZ);
 
@@ -42,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
     void Rotation()
     {
         rotation.x += Input.GetAxis("Mouse X") * rotationSpeed;
-        rotation.y += Input.GetAxis("Mouse Y") * rotationSpeed;
+        rotation.y -= Input.GetAxis("Mouse Y") * rotationSpeed; // ← diperbaiki
 
         rotation.y = Mathf.Clamp(rotation.y, -10, 10);
 
