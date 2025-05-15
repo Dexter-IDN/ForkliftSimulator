@@ -6095,7 +6095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limit: 2
+  limit: 1
   area: B
   itemTag: Barrel
   areaText: {fileID: 779266352}
@@ -33113,9 +33113,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ed725cf5ad738a48822a4bf4d34d9a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  limit: 9
+  limit: 2
   area: C
-  itemTag: Giftbox
+  itemTag: Cardboard
   areaText: {fileID: 414656465}
   questText: {fileID: 1879216172}
 --- !u!1 &1166779746
@@ -53294,7 +53294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   limit: 2
   area: A
-  itemTag: AMPRack
+  itemTag: Cabinet
   areaText: {fileID: 664236883}
   questText: {fileID: 1156089530}
 --- !u!1001 &1755783917
