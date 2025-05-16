@@ -85,6 +85,12 @@ public class ForkliftController : MonoBehaviour
     public float Revs { get; private set; }                // RPM mesin
     public float AccelInput { get; private set; }          // Input akselerasi
 
+    private AudioManager audioManager;
+
+    private void Awake() {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
     /// <summary>
     /// Inisialisasi saat permainan dimulai
     /// </summary>
@@ -96,7 +102,7 @@ public class ForkliftController : MonoBehaviour
         {
             wheelMeshLocalRotations[i] = wheelMeshes[i].transform.localRotation;
         }
-        
+
         // Atur pusat massa
         wheelColliders[0].attachedRigidbody.centerOfMass = centerOfMassOffset;
 
@@ -105,9 +111,11 @@ public class ForkliftController : MonoBehaviour
 
         // Ambil referensi rigidbody
         vehicleRigidbody = GetComponent<Rigidbody>();
-        
+
         // Hitung torsi awal dengan mempertimbangkan kontrol traksi
         currentTorque = fullTorqueOverAllWheels - (tractionControl * fullTorqueOverAllWheels);
+
+        audioManager.playSFX(audioManager.engineStart);
     }
 
     /// <summary>
